@@ -1,0 +1,546 @@
+body{
+     background-color: #000;
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+   
+}
+header{
+    width: 100%;
+    
+}
+.top{
+    width: 100%;
+    height: 56px;
+    background:url('../images/logo1.png') no-repeat center #000;  
+    border-bottom: 2px solid #262626;
+    position: fixed;
+    z-index:9999;
+}
+.toggle{
+    width: 76px;
+    height: 56px;
+    cursor: pointer;
+    overflow: hidden;
+    float: left;
+    border-right: 2px solid #262626;
+}
+.toggle>ul{
+    width: 30px;
+    margin: 15px 0 0 23px;
+    position: relative;
+}
+.toggle>ul>li{
+    width: 30px;
+    height: 4px;
+    background-color: #707479;
+    position: absolute;
+    transition: all 0.3s;
+    transform-origin: 90%;
+    border-radius: 3px;
+}
+.toggle2{
+    top:8px
+}
+.toggle3{
+    top:16px
+}
+.register{
+    width: 150px;
+    float: right;
+    margin: 18px 80px 0 0 ;
+    position: relative;
+}
+.register>a{
+    width: 30px;
+    line-height: 16px;
+    margin-left: 10px;
+    float: right;
+    font-size: 14px;
+    color: #707476;
+    text-align: center;
+    transition: all 0.2s;
+}
+.hline {
+    width: 1px;
+    height: 16px;
+    background-color: #707476;
+    transform: rotate(10deg);
+    position: absolute;
+    right:34px;
+}
+.register>a:hover {
+    color: #f5c26b;
+}
+.shopcar{
+    width: 138px;
+    height: 54px;
+    float: right;
+    border-right: 2px solid #262626;
+    border-left: 2px solid #262626;
+}
+.shopcar>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../images/gw.png') no-repeat center 10px;
+    background-size: 25%;
+    padding-top: 18px;
+    transition: all 0.5s;
+}
+.shopcar>a:hover{
+    background: url('../images/gw-hover.png') no-repeat center 10px;
+    background-size: 25%;
+}
+.banner{
+    width: 100%;
+    padding-top: 58px;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all 1s;
+}
+.banner .img2{
+    position: absolute;
+    z-index:1;
+    opacity: 0;
+    top:0;
+    left:0;
+    transition: all 1s;
+}
+.swip{
+    position: absolute;
+    z-index:10;
+    bottom: 30px;
+    right:50px;
+}
+.swip div{
+    width: 68px;
+    height: 68px; 
+    float: left;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.left{
+    background: url('../images/pageleft_01.jpg') no-repeat;
+    margin-right:10px;
+}
+.right{
+    background: url('../images/pageright_02.jpg') no-repeat;
+}
+.left:hover{
+    background: url('../images/page-hoverleft_01.jpg') no-repeat;
+}
+.right:hover{
+    background: url('../images/page-hoverright_02.jpg') no-repeat;
+}
+.num{
+    position: absolute;
+    z-index:10;
+    bottom: 35px;
+    left:50px;
+}
+.num p{
+    float: left;
+    margin-left: 35px;
+    font-size: 24px;
+    color:#888;
+    cursor: pointer;
+}
+.num .active{
+    color:#c5a28b;
+    font-size: 36px;
+    margin-top: -12px;
+}
+.menu{
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index:99;
+    transition: all 0.5s;
+    display: none;
+}
+.menubox{
+    width: 92%;
+    height: 92%;
+    margin:0 auto;
+    border: 2px solid #262626;
+    border-top:0;
+}
+.menuinner{
+    width: 1050px;
+    margin:0 auto;
+    height: 427px;
+    padding-top:156px;
+}
+.menuinner div{
+    width: 500px;
+    height: 100%;
+    float: left;
+}
+.menuleft{
+    position: relative;
+    border-right:2px solid #262626;
+}
+.menuleft>.circle{
+    width: 285px;
+    height: 285px;
+    background: #262626;
+    border-radius: 100%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.menuleft li{
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    transition: opacity 0.5s;
+    opacity:0;
+}
+.menuleft>ul>li>img{
+    width:100%;
+    height: 100%;
+    
+}
+.menuleft .picactive{
+    opacity:1;
+}
+.menuright ul{
+    margin:20px 0 0  50px;
+}
+.menuright li{
+    margin-bottom: 20px;
+    transition: margin-left 0.5s;
+}
+.menuright a{
+    font-size: 44px;
+    line-height: 45px;
+    color: #888888;
+    text-align: left;
+    font-weight: bold;
+}
+section{
+    width: 100%;
+}
+.nav{
+    width: 100%;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #262626;
+}
+.nav li{
+    width: 16.66%;
+    height: 127px;
+    float: left;
+    transition: all 0.5s;
+    cursor: pointer;
+    background: url('../images/nav1.png') no-repeat center;
+    background-size: 70px 60px;
+}
+.nav li:nth-child(2){
+    background: url('../images/nav2.png') no-repeat center;
+    background-size: 70px 60px;
+}
+.nav li:nth-child(3){
+    background: url('../images/nav3.png') no-repeat center;
+    background-size: 70px 60px;
+}
+.nav li:nth-child(4){
+    background: url('../images/nav4.png') no-repeat center;
+    background-size: 70px 60px;
+}
+.nav li:nth-child(5){
+    background: url('../images/nav5.png') no-repeat center;
+    background-size: 70px 60px;
+}
+.nav li:nth-child(6){
+    background: url('../images/nav6.png') no-repeat center;
+    background-size: 70px 60px;
+}
+.nav li:first-child:hover{
+    background: url('../images/nav11.png') no-repeat center;
+    background-size: 75px 65px;
+}
+.nav li:nth-child(2):hover{
+    background: url('../images/nav22.png') no-repeat center;
+    background-size: 75px 65px;
+}
+.nav li:nth-child(3):hover{
+    background: url('../images/nav33.png') no-repeat center;
+    background-size: 75px 65px;
+}
+.nav li:nth-child(4):hover{
+    background: url('../images/nav44.png') no-repeat center;
+    background-size: 75px 65px;
+}
+.nav li:nth-child(5):hover{
+    background: url('../images/nav55.png') no-repeat center;
+    background-size: 75px 65px;
+}
+.nav li:nth-child(6):hover{
+    background: url('../images/nav66.png') no-repeat center;
+    background-size: 75px 65px;
+}
+.nav a{
+    display: block;
+    font-size: 16px;
+    color:#888;
+    text-align: center;
+    margin-top: 100px;
+}
+.shoplist{
+    width: 100%;
+}
+.shoplist li{
+    width: 24%;
+    height:520px;
+    float: left;
+    border-right:8px solid #000;
+    background-color: #131313;
+    margin-top: 8px;
+    transition: all 0.3s;
+    
+}
+.shoplist li:nth-child(4n){
+    border-right: 0;
+}
+.shoplist li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.cir{
+    width: 50%;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #262626;
+    top:13%;
+    left:26%;
+    z-index:1;
+}
+.cir:before,.classulcir:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.imag{
+    width: 80%;
+    height: 55%;
+    display: block;
+    position: absolute;
+    z-index:5;
+    top:7%;
+    left:11%;
+    transition: all 0.3s;
+}
+.line{
+    width: 120px;
+    height: 4px;
+    background: #c5a28b;
+    position: absolute;
+    left: 50%;
+    top:64%;
+    margin-left: -60px;
+}
+.shoplist p{
+    font-size: 16px;
+    color: #888888;
+    text-align: center;
+    padding-top: 370px;
+}
+.shoplist h3{
+    font-size: 25px;
+    text-align: center;
+    color: #c5a28b;
+    font-weight: bold;
+    margin-top: 55px;
+}
+.shoplist li:hover,.classul li:hover,.footerup:hover{
+    box-shadow: inset 0px 0px 38px rgba(0, 0, 0, 0.8);
+}
+.shoplist li:last-child h3{
+    margin-top: 0px;
+}
+.prom{
+    width: 240px;
+    font-size: 14px;
+    text-align: center;
+    background: transparent;
+    border: 2px solid #c5a28b;
+    color: #c5a28b;
+    padding: 3px 12px;
+    border-radius: 16px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 25px;
+}
+.shoplist  span{
+    color: #666666;
+    font-size: 12px;
+    text-decoration: line-through;
+    text-align: center;
+}
+.list-title{
+    width: 100%;
+    margin:8px 0;
+}
+.list-title img{
+    width: 100%;
+    display: block;
+}
+.classul{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+.classul li{
+    width: 32.5%;
+    height: 50%;
+    position: relative;
+    background-color: #131313;
+    float: left;
+    margin-right: 7px;
+    cursor: pointer;
+    
+}
+.classul li:nth-child(3n){
+    margin-right:0;
+}
+.classul li:nth-child(n+4){
+    margin-top: 8px;
+}
+.classulcir{
+    width: 30%;
+    position: absolute;
+    top:20%;
+    right:5%;
+    border-radius: 100%;
+    background-color: #262626;
+    z-index: 1;
+}
+.classul li img{
+    width: 45%;
+    position: absolute;
+    top:0;
+    right:-3%;
+    z-index:5;
+    transition:all 0.3s;
+}
+.classulbox{
+    width: 50%;
+    height: 100%;
+    margin:10px 0 0 10px;
+}
+.classulbox p{
+    font-size: 22px;
+    color:#888;
+    text-align: center;
+    margin-top: 35%;
+}
+.classulinner{
+    width: 170px;
+    height: 23px;
+    text-align: center;
+    background: transparent;
+    border: 2px solid #c5a28b;
+    color: #c5a28b;
+    padding: 3px 0;
+    border-radius: 16px;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+footer{
+    width: 100%;
+    background-color: #131313;
+    margin-top: 8px;
+}
+.footerup{
+    width: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.applecare{
+    width: 1100px;
+    margin:0 auto;
+    padding:50px 0;
+    
+}
+.appleimg{
+    width: 179px;
+    height: 179px;
+    float: left;
+    transition: all 0.3s;
+}
+.applebox{
+    margin:10px 0 0 80px;
+    float: left;
+}
+.applebox h3{
+    font-size: 32px;
+    color: #c5a28b;
+    text-align: left;
+    line-height: 32px;
+    
+}
+.applebox p{
+    font-size: 20px;
+    color: #888888;
+    margin-top: 10px
+}
+.applebox .apple1{
+    margin-top: 50px;
+    width: 120px;
+    background: url('../images/applecare-icon.png') no-repeat center right;
+}
+.footerbox{
+    width: 100%;
+    border-top: 2px solid #262626;
+    background-color: #131313;
+}
+.footerdown{
+    width: 90%;
+    margin-top: 20px;
+    height: 67px;
+    margin:0 auto;
+}
+.footerlogo{
+    width: 135px;
+    height: 45px;
+    padding-top: 20px;
+    float: left;
+}
+.footerlogo img{
+    width: 100%;
+    height: 100%;
+}
+.footermid{
+    height: 100%;
+    float: left;
+   
+    border-right: 2px solid #262626;
+}
+.footermid p{
+    font-size: 12px;
+    color:#666;
+    margin:25px 30px 0 74px;
+}
+.footerright{
+    float: right;
+    height: 100%;
+    border-left:2px solid #262626;
+    
+}
+.footerright a{
+    display: block;
+    background: url('../images/icon-top.png') no-repeat 72px;
+    padding: 40px 0 0 50px;
+    color: #888888;
+    font-size: 18px;
+    
+}
